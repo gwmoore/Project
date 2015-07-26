@@ -182,6 +182,14 @@ tbl_test_train_fnl <- group_by(tbl_test_train_ss, activity_label, subject_number
 colnames(tbl_test_train_fnl)[3:ncol(tbl_test_train_fnl)] <- paste("mean(", tbl_features_ss$rev_feature, ")", sep = "")
 ###################################################################################################
 ###################################################################################################
+# Remove intermediate data sets.
+
+rm(activity_labels, features, subject_test, subject_train, tbl_activity_labels, tbl_features,
+   tbl_features_ss, tbl_subject_test, tbl_subject_test_act, tbl_subject_train, tbl_subject_train_act,
+   tbl_test, tbl_test_train, tbl_test_train_ss, tbl_train, tbl_x_test, tbl_x_train, tbl_y_test,
+   tbl_y_test_act, tbl_y_train, tbl_y_train_act, x_test, x_train, y_test, y_train)
+###################################################################################################
+###################################################################################################
 ###################################################################################################
 ###################################################################################################
 # R code to write results data set to a txt file.
